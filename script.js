@@ -62,10 +62,10 @@ const rompecabezas = {
     _barajar: function () {
         const piezas = parseInt(this._get("piezas").value);
 
-        // Crea un array con todas las posiciones y barájalo
+        // Creó un array con todas las posiciones y barájalo
         const posicionesBarajadas = [...this._arr_pos_r].sort(() => Math.random() - 0.5);
 
-        // Asigna las posiciones barajadas a las celdas
+        // Asigno las posiciones barajadas a las celdas
         for (let i = 0; i < piezas; i++) {
             const id = `pos_${i + 1}`;
             this._get(id).style.backgroundPosition = posicionesBarajadas[i];
