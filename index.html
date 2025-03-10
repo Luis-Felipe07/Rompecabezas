@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rompecabezas</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="content">
+        <h1 id="titulo">ROMPECABEZAS</h1>
+
+
+            
+        <div id="conf">
+            <label for="piezas">Nro de piezas:</label>
+            <select id="piezas">
+                <option value="4">4</option>
+                <option value="9">9</option>
+                <option value="16">16</option>
+                <option value="25">25</option>
+                <option value="36">36</option>
+                <option value="100">100</option>
+            </select>
+            <button id="barajar">Barajar</button><br>
+            <button onclick="window.open('img-r.jpg', '_blank')" class="reference-button">Ver imagen de referencia</button>
+        </div>
+        <p>Pulsa en un cuadro y luego en otro para intercambiar sus posiciones.</p>
+
+            <div id="div_content"></div>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>

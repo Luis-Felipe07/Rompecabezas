@@ -1,0 +1,136 @@
+body {
+    background: #48e;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #ff9800;
+    margin-bottom: 20px;
+}
+
+button, select {
+    font-size: 1rem;
+    padding: 15px 30px;
+    margin: 15px;
+    border: 3px solid #ff9800;
+    border-radius: 10px;
+    background: #ff9800;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s, color 0.3s;
+}
+
+button:hover, select:hover {
+    color: #000;
+    transform: scale(1.05);
+}
+
+select {
+    appearance: none;
+    text-align: center;
+    background: #ff9800;
+}
+
+#content {
+    margin-top: 20px;
+}
+
+#game-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    position: relative;
+}
+
+#conf {
+    margin-bottom: 10px;
+}
+
+table {
+    border: 2px solid #ff9800;
+    box-shadow: 1px 1px 8px #ff9800;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+#game-container > p {
+    margin: 0;
+    padding: 10px;
+    background: #ff9800;
+    border-radius: 5px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+td.pieza {
+    background: url('img-r.jpg');
+    transition: background-position 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    border: 3px solid #000;
+}
+
+#titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 8px #ff9800;
+}
+
+#div_content {
+    margin-top: 20px;
+}
+
+.reference-button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+    margin-top: 10px;
+    background: transparent;
+    border: 2px solid #ff9800;
+    color: #f4ce96;
+}
+
+.reference-button:hover {
+    background: #ff9800;
+    color: white;
+}
+
+
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    button, select {
+        font-size: 1.3rem;
+        padding: 12px 25px;
+        min-width: 130px;
+    }
+
+    #div_content {
+        width: 95vw;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    button, select {
+        font-size: 1.1rem;
+        padding: 10px 20px;
+        min-width: 120px;
+    }
+
+    #div_content {
+        width: 100vw;
+    }
+}
